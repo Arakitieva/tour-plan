@@ -377,20 +377,20 @@ template {
   padding-bottom: 40px;
 }
 
-.navbar-top__search {
-  margin-right: auto;
-  margin-left: 108px;
-}
-
 .navbar-top__menu-button {
   display: none;
 }
 
-.navbar-top-bottom {
+.navbar__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
+.navbar-bottom {
   background-color: #0A223D;
 }
 
-.navbar-top-menu {
+.navbar-menu {
   list-style-type: none;
   padding: 31px 0;
   margin: 0;
@@ -406,7 +406,7 @@ template {
   color: #FFFFFF;
 }
 
-.navbar-top-menu__link {
+.navbar-menu__link {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
@@ -505,6 +505,9 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .logo .search__input {
+    max-width: 340px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -521,6 +524,7 @@ template {
     display: flex;
     width: 16px;
     height: 11px;
+    padding: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
