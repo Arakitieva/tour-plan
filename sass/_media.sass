@@ -6,14 +6,13 @@
     max-width: 700px
   .logo
     width: 132px
-    .navbar
-      &-top
-        padding-top: 30px
-        padding-bottom: 30px
-      &__search
-        margin-left: auto
-        max-width: 340px
-      .navbar
+  .navbar
+    &-top
+      padding-top: 30px
+      padding-bottom: 30px
+    &__search
+      margin-left: auto
+      max-width: 340px
     &-menu
       padding-top: 22px
       padding-bottom: 22px
@@ -50,6 +49,71 @@
 @media(max-width: 576px)
   .logo
     width: 99px
+@media(max-width: 320px)
+  .header 
+    display: flex
+    flex-direction: column
+
+  .container
+    width: 100%
+  .logo
+    padding-left: 4% 
+  .navbar
+    &__search
+      display: flex 
+      width: 245px
+      height: 40px
+      margin-top: 5%
+      order: 2
+      flex-basis: 80%;
+      align-items: center
+      margin-top: 10px
+    &-top
+      flex-wrap: wrap
+      justify-content: space-around
+      align-items: space-around
+      padding-top: 15px
+    &-menu
+      display: flex
+      flex-wrap: wrap
+      padding-top: 22px
+      padding-bottom: 22px
+      justify-content: center   
+      &__item
+        flex-basis: 51%
+        align-content: center
+        justify-content: center
+      &__link
+        flex-direction: column
+        width: 16px
+        height: 1px
+
+    &__user
+      display: flex 
+      flex-basis: 100%
+      align-content: space-between
+      margin-top: 10px
+      padding-top: 15px
+      padding-bottom: 15px
+      order: 1
+      flex-direction: column
+      margin-top: 15px
+      background-color: $dark
+      height: auto
+    &-bottom 
+      display: flex
+
+  .user__name
+    margin: 0
+    margin-top: 10px
+    color: #fff
+
+  .navbar-top__menu-button
+    display: flex
+    flex-wrap: wrap
+   
+
+
 
 
 
